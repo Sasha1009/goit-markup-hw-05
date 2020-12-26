@@ -95,7 +95,10 @@ p {
     align-items: center;
     padding-right: 50px;
 }
-
+.nav-links:hover,
+.nav-links:focus {
+    color: var(--accent-color);
+}
 .nav-links-contacts{
     text-decoration: none;
     color: #212121;
@@ -118,6 +121,10 @@ p {
     margin-right: 10px;
     fill: currentColor;
 }
+.icon-phone:hover,
+.icon-phone:focus {
+    color: var(--accent-color);
+}
 .email{
     font-family: "roboto", sans-serif;
     font-style: normal;
@@ -132,6 +139,10 @@ p {
 }
 .email:hover,
 .email:focus {
+    color: var(--accent-color);
+}
+.phone:hover,
+.phone:focus {
     color: var(--accent-color);
 }
 .email-two{
@@ -385,8 +396,30 @@ body {
 .image-one{
     padding-right: 30px;
     width: 370px;
+    position: relative;
+    height: 294px;
+    background-color: #757575;
 }
-
+.image-text{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+.picture-text{
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
 .description{
     font-family: 'roboto', sans-serif;
     font-style: normal;
