@@ -22,7 +22,7 @@
                 <a class="nav-links" href="portfolio.html">Портфолио</a>
             </li>
             <li >
-                <a class="nav-links" href="contacts.html">Контакты</a>
+                <a class="nav-links" href="#">Контакты</a>
             </li>
         </ul>
         </nav>
@@ -45,7 +45,7 @@
     <section class="hero">
         <div class="container">
             <H1 class="hero-title">Эффективные решения для вашего бизнеса</H1>
-            <button class="button-index" type="button" data-open-modal>Заказать услугу</button>
+            <button class="button-index" type="button" data-modal-open>Заказать услугу</button>
         </div>
     </section>
     <!--Особенности-->
@@ -361,13 +361,13 @@
 </footer>
 
 <!--скрытое окно-->
-<div class="new-window" data-backdrop>
-    <div class="modal" data-open-modal>
-        <div class="window" data-close-modal>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button  class="window" type="button" data-modal-close>
             <svg class="close-icon">
                 <use href="./images/close.svg"></use>
             </svg>
-        </div>
+        </button>
     </div>
 </div>
 
